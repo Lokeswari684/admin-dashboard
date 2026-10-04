@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Core<span>Admin</span></div>
+
+            <div class="nav-section">
+                <div class="nav-label">Main</div>
+                <ul class="nav-list">
+                    <li><a href="#" class="active">📊 Dashboard</a></li>
+                    <li><a href="#">👥 Users</a></li>
+                    <li><a href="#">📦 Orders</a></li>
+                    <li><a href="#">🛒 Products</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-label">Reports</div>
+                <ul class="nav-list">
+                    <li><a href="#">📈 Analytics</a></li>
+                    <li><a href="#">💳 Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-label">Account</div>
+                <ul class="nav-list">
+                    <li><a href="#">⚙️ Settings</a></li>
+                    <li><a href="#">🚪 Logout</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="top-header">
+                <h1>Dashboard</h1>
+                <div class="header-right">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <div class="header-avatar">L</div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon blue">👥</div>
+                        <span class="stat-change up">↑ 12.4%</span>
+                    </div>
+                    <div class="stat-value">8,492</div>
+                    <div class="stat-label">Total Users</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon green">💰</div>
+                        <span class="stat-change up">↑ 8.1%</span>
+                    </div>
+                    <div class="stat-value">₹4,28,900</div>
+                    <div class="stat-label">Revenue</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon orange">📦</div>
+                        <span class="stat-change down">↓ 2.3%</span>
+                    </div>
+                    <div class="stat-value">1,204</div>
+                    <div class="stat-label">Orders</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon pink">📉</div>
+                        <span class="stat-change up">↑ 5.7%</span>
+                    </div>
+                    <div class="stat-value">3.2%</div>
+                    <div class="stat-label">Bounce Rate</div>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>Recent Users</h2>
+                    <a href="#" class="view-all">View All →</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Joined</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">AR</div>
+                                    <div>
+                                        <div class="user-name">Aditya Rao</div>
+                                        <div class="user-email">aditya.rao@example.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Admin</td>
+                            <td><span class="status-badge active">Active</span></td>
+                            <td>Jan 12, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">SK</div>
+                                    <div>
+                                        <div class="user-name">Sneha Kapoor</div>
+                                        <div class="user-email">sneha.k@example.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Editor</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>Feb 3, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">RM</div>
+                                    <div>
+                                        <div class="user-name">Rahul Mehta</div>
+                                        <div class="user-email">rahul.m@example.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Viewer</td>
+                            <td><span class="status-badge inactive">Inactive</span></td>
+                            <td>Mar 18, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">PN</div>
+                                    <div>
+                                        <div class="user-name">Priya Nair</div>
+                                        <div class="user-email">priya.nair@example.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Editor</td>
+                            <td><span class="status-badge active">Active</span></td>
+                            <td>Apr 5, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar">VS</div>
+                                    <div>
+                                        <div class="user-name">Vikram Singh</div>
+                                        <div class="user-email">vikram.s@example.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Admin</td>
+                            <td><span class="status-badge active">Active</span></td>
+                            <td>May 22, 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
